@@ -33,8 +33,8 @@ function App() {
       <body>
         <div className="testimonial">
           <div className="testimonial-photo">
-            <img src={patternBg} alt="" className="bg-img"/>
-            <img src={user.photo} alt={user.name} className="testimonial-photo-user"/>
+            <img src={patternBg} alt="" className="bg-img" />
+            <img src={user.photo} alt={user.name} className="testimonial-photo-user" />
           </div>
           <div className="btn">
             <button onClick={() => setUser(tanya)}>
@@ -47,7 +47,7 @@ function App() {
           </div>
           <div className="testimonial-info">
             <div className="patternQuotes">
-              <img src={patternQuotes} alt="" className="patternQuotes-img"/>
+              <img src={patternQuotes} alt="" className="patternQuotes-img" />
             </div>
             <div className="testimonial-quote">
               <p>
@@ -62,12 +62,17 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="patternCurve"> </div>
-        
+
         <div class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
           Coded by <a href="https://github.com/molendaluisa">Luisa Molenda</a>.
         </div>
+        
+        <div className="patternCurve">
+        <img src={patternCurve} alt="" className="patternCurve-img" />
+        </div>
+
+
       </body>
     </div>
   );
