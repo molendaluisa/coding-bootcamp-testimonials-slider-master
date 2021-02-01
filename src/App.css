@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+.App {
+  margin: 0;
+  padding: 0;
+}
+
 .App body {
   margin: 0;
   padding: 0;
@@ -18,20 +23,10 @@
   height: 100vh;
 }
 
-.App .testimonial .testimonial-photo .bg-img {
-  width: 330px;
-  height: 300px;
-  position: absolute;
-  top: 30px;
-  left: 25px;
-  z-index: -1;
-}
-
-.App .testimonial .testimonial-photo-user {
+.App .testimonial-photo-user {
   height: 250px;
   width: 250px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
   border-radius: 4px;
 }
 
@@ -39,14 +34,14 @@
   height: 40px;
   width: 80px;
   border-radius: 100px;
+  display: block;
+  margin: 0 auto;
   -webkit-box-shadow: 0 5px 1px rgba(32, 32, 70, 0.2);
           box-shadow: 0 5px 1px rgba(32, 32, 70, 0.2);
   position: absolute;
-  top: 285px;
+  top: 280px;
+  left: 140px;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .App .testimonial .btn button {
@@ -60,7 +55,7 @@
   outline: none;
 }
 
-.App .testimonial .btn .svg {
+.App .testimonial .btn .icon {
   width: 10px;
   height: 10px;
   margin: 0;
@@ -72,40 +67,49 @@
   margin: 0 35px;
 }
 
-.App .testimonial-info .patternQuotes {
-  height: 25px;
-}
-
-.App .testimonial-info .patternQuotes .patternQuotes-img {
-  width: 60px;
-  height: 50px;
-  margin: 0;
-  z-index: -1;
-}
-
-.App .testimonial-info .testimonial-quote {
+.App .testimonial-quote {
   font-weight: 300;
   color: #202046;
   font-size: 16px;
   margin-bottom: 25px;
 }
 
-.App .testimonial-info .testimonial-quote p {
+.App .testimonial-quote p {
   margin: 0;
 }
 
-.App .testimonial-info .testimonial-name {
+.App .testimonial-name {
   font-weight: 700;
   color: #202046;
 }
 
-.App .testimonial-info .testimonial-job {
+.App .testimonial-job {
   font-weight: 500;
   color: #babacf;
   margin-bottom: 25px;
 }
 
-.App .patternCurve-img {
+.App .pattern-bg-img {
+  width: 330px;
+  height: 300px;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  z-index: -1;
+}
+
+.App .pattern-quotes {
+  height: 25px;
+}
+
+.App .pattern-quotes-img {
+  width: 60px;
+  height: 50px;
+  margin: 0;
+  z-index: -1;
+}
+
+.App .pattern-curve-img {
   width: 100%;
   height: 70px;
   position: absolute;
@@ -125,5 +129,86 @@
 
 .App .attribution a {
   text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .App .container {
+    display: block;
+    margin: 0 auto;
+  }
+  .App .testimonial {
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .App .testimonial-photo-user {
+    height: 540px;
+    width: 540px;
+    margin: 110px 160px 145px 0;
+    border-radius: 4px;
+    position: relative;
+  }
+  .App .testimonial .btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 200px;
+    top: 650px;
+    right: -195px;
+  }
+  .App .testimonial .btn button {
+    width: 50px;
+    height: 50px;
+  }
+  .App .testimonial .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .App .testimonial-info {
+    text-align: left;
+    margin: 280px 0 230px 160px;
+    width: 625px;
+    height: 280px;
+  }
+  .App .testimonial-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+  }
+  .App .testimonial-name {
+    margin-right: 5px;
+  }
+  .App .testimonial-quote {
+    font-size: 32px;
+  }
+  .App .pattern-bg-img {
+    width: 700px;
+    height: 655px;
+    position: absolute;
+    top: 75px;
+    left: 790px;
+  }
+  .App .pattern-quotes-img {
+    width: 120px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    left: 325px;
+    top: 275px;
+  }
+  .App .pattern-curve-img {
+    width: 50%;
+    height: 155px;
+    left: 0;
+  }
 }
 /*# sourceMappingURL=App.css.map */

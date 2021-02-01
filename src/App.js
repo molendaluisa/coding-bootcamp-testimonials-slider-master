@@ -31,48 +31,54 @@ function App() {
   return (
     <div className="App">
       <body>
-        <div className="testimonial">
-          <div className="testimonial-photo">
-            <img src={patternBg} alt="" className="bg-img" />
-            <img src={user.photo} alt={user.name} className="testimonial-photo-user" />
-          </div>
-          <div className="btn">
-            <button onClick={() => setUser(tanya)}>
-              <img src={iconPrev} alt="Previous" className="svg" />
-            </button>
-            <button onClick={() => setUser(john)}>
-              <img src={iconNext} alt="Next" className="svg" />
-            </button>
+        <div className="container">
+          <div className="testimonial">
+            <div className="testimonial-photo">
+              <img src={patternBg} alt="" className="pattern-bg-img" />
+              <img src={user.photo} alt={user.name} className="testimonial-photo-user" />
 
-          </div>
-          <div className="testimonial-info">
-            <div className="patternQuotes">
-              <img src={patternQuotes} alt="" className="patternQuotes-img" />
-            </div>
-            <div className="testimonial-quote">
-              <p>
-                {user.quote}
-              </p>
-            </div>
-            <div className="testimonial-name">
-              {user.name}
-            </div>
-            <div className="testimonial-job">
-              {user.job}
-            </div>
-          </div>
-        </div>
+              <div className="btn">
+                <button onClick={() => setUser(tanya)}>
+                  <img src={iconPrev} alt="Previous" className="icon" />
+                </button>
+                <button onClick={() => setUser(john)}>
+                  <img src={iconNext} alt="Next" className="icon" />
+                </button>
+              </div>
 
-        <div class="attribution">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            </div>
+
+
+            <div className="testimonial-info">
+              <div className="pattern-quotes">
+                <img src={patternQuotes} alt="" className="pattern-quotes-img" />
+              </div>
+              <div className="testimonial-quote">
+                <p>
+                  {user.quote}
+                </p>
+              </div>
+              <div className="testimonial-label">
+                <div className="testimonial-name">
+                  {user.name}
+                </div>
+                <div className="testimonial-job">
+                  {user.job}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
           Coded by <a href="https://github.com/molendaluisa">Luisa Molenda</a>.
         </div>
-        
-        <div className="patternCurve">
-        <img src={patternCurve} alt="" className="patternCurve-img" />
+
+          <div className="pattern-curve">
+            <img src={patternCurve} alt="" className="pattern-curve-img" />
+          </div>
+
         </div>
-
-
       </body>
     </div>
   );
