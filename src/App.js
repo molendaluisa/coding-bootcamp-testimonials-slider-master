@@ -30,7 +30,6 @@ function App() {
 
   return (
     <div className="App">
-      <body>
         <div className="container">
           <div className="testimonial">
             <div className="testimonial-photo">
@@ -69,8 +68,8 @@ function App() {
             </div>
           </div>
 
-          <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          <div className="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
           Coded by <a href="https://github.com/molendaluisa">Luisa Molenda</a>.
         </div>
 
@@ -79,7 +78,6 @@ function App() {
           </div>
 
         </div>
-      </body>
     </div>
   );
 }
